@@ -12,5 +12,5 @@ yum -y install wget; wget https://raw.githubusercontent.com/HU-HPC/linux-scripts
 ```
 Ubuntu
 ```
-sudo apt update -y ; wget https://raw.githubusercontent.com/HU-HPC/linux-scripts/master/docker/docker-with-compose.sh -O install.sh; sh install.sh
+sudo apt update -y ; wget https://raw.githubusercontent.com/HU-HPC/linux-scripts/master/docker/docker-with-compose.sh -O install.sh; sudo sh install.sh
 ```
