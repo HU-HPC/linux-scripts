@@ -3,10 +3,8 @@ import random
 import string
 import sys
 
-# Create docker containers for postgres by passing args to this script.
-# work in progress.
-
 client = docker.from_env()
+
 
 def create_postgres_container(container_name,db_name, db_user, db_password, db_port, container_data):
     postgres_container = client.containers.run(
@@ -26,6 +24,9 @@ def create_postgres_container(container_name,db_name, db_user, db_password, db_p
                 'bind': '/var/lib/postgresql/data',
                 'mode': 'rw'
             }
+        },
+        restart_policy={
+            'Name': 'always'
         }
     )
     return postgres_container
