@@ -14,8 +14,6 @@ cat << "EOF"
 
 ---------------- Docker Registry script ----------------
 
-apt install curl -y
-
 mkdir data
 
 wget https://raw.githubusercontent.com/HU-HPC/linux-scripts/master/docker-registry/config.yml
