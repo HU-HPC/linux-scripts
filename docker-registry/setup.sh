@@ -21,5 +21,10 @@ mkdir data
 wget https://raw.githubusercontent.com/HU-HPC/linux-scripts/master/docker-registry/config.yml
 wget https://raw.githubusercontent.com/HU-HPC/linux-scripts/master/docker-registry/docker-compose.yml
 
-echo "Run the following command to start docker registry!"
-echo "docker compose up -d"
+cat << "EOF"
+
+------ Run the following command to start docker registry! ------
+
+docker compose up -d
+
+EOF
