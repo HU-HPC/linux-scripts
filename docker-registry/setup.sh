@@ -14,6 +14,8 @@ cat << "EOF"
 
 ---------------- Docker Registry script ----------------
 
+EOF
+
 mkdir data
 
 wget https://raw.githubusercontent.com/HU-HPC/linux-scripts/master/docker-registry/config.yml
