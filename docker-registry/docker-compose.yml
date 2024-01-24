@@ -10,3 +10,4 @@ services:
     volumes:
       - ./data:/data
       - ./config.yml:/etc/docker/registry/config.yml
+    restart: always
